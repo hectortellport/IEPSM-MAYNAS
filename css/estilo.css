@@ -221,7 +221,6 @@ a{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    width:100%;
    
 
     background-color: brown;
@@ -230,7 +229,6 @@ a{
 
 .video_anuncio{
     padding-bottom: 30px;
-    width:390px;
     
 }
 
@@ -336,7 +334,7 @@ a{
     clip-path: polygon(15% 20%,85% 20%,100% 0%,100% 100%,100% 100%,18% 100%,0% 100%,0% 0%);*/
     clip-path: polygon(15% 10%,85% 10%,100% 0%,100% 100%,100% 100%,100% 100%,0% 100%,0% 0%);
 
-    background-image:url(../imagen/fondoLineasmovil.svg);
+    background-image: url(../imagen/fondoLineasmovil.svg);
 
     background-color: brown;
     width: 100%;
@@ -357,6 +355,20 @@ a{
  /*********************************** WEB RESPONSY ***********************************/
 
  @media(min-width:800px){
+
+    .nav{
+        position:fixed;
+        width: 100%;
+        z-index:1;
+    }
+
+    .banner_img{
+        /*background-color: brown;*/
+        height: 750px;
+        background-image: url(../imagen/IEMAYNAS.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
     .nav_container{
         height: 130px;

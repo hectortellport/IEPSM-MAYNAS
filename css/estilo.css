@@ -1,0 +1,536 @@
+:root{
+    --padding-container:80px 0;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    line-height: 1.5em;
+    /*font-weight:;
+    font-style: normal;*/
+}
+
+h1 ,h2 ,h3{
+    font-family: "Archivo Black", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;;
+}
+
+ .hero{
+    
+    --padding-container:0;
+ }
+
+ .nav{
+    background-color: brown;
+    background-image: url(../imagen/fondoLineasmovil.svg);
+ }
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    overflow: hidden;
+
+    margin:0 auto;
+    padding:--var(--padding-container);
+}
+
+.nav_container{
+    height: 80px;
+    display: flex;
+    
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav_link{
+    display: none;
+}
+
+.nav_icon{
+    display:block;
+}
+
+.maynas{
+        font-family: "Rubik Mono One", serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#ffff;
+        font-size: 30px;
+
+        padding-top: 10px;
+        filter:drop-shadow(2px 2px 2px black)
+}
+    
+.logo{
+
+    display: flex;
+    flex-direction:column;
+    line-height:1.7em;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.colegio {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:35px;
+    color:yellow;
+  }
+  
+
+.banner_img{
+    /*background-color: brown;*/
+    height: 600px;
+    background-image: url(../imagen/IEMAYNAS.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.somos{
+
+    clip-path: polygon(20% 0%,80% 0%,100% 0%,100% 80%,90% 70%,10% 70%,0% 80%,0% 0%);
+    background-image: url(../imagen/fondoLineasmovil.svg);
+    padding-top: 40px;
+    margin-bottom:-150px;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    
+    width: 100%;
+
+    line-height: 1.5em;
+    padding-bottom: 200px;
+}
+
+
+
+.somos_insignea{
+    width:100px;
+}
+
+.somos_parrafo{
+    font-size: 18px;
+    color: #ffff;
+    text-align:center;
+    padding:0px 30px 40px 30px;
+    font-family: verdana;
+    margin-bottom: 0;
+    
+}
+
+/**********************PROPUESTA***************************/
+
+.propuesta{
+    
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.propuesta_titulo{
+    text-align: center;
+    font-size: 35px;
+    color: brown;
+}
+
+.propuesta_parrafo{
+    font-size: 18px;
+    color: black;
+    text-align:center;
+    padding:0px 30px 40px 30px;
+    font-family: verdana;
+
+}
+ /*********************CONTENIDO PROPUESTA*************************/
+
+ .n_propuesta{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+ }
+ .n_propuesta_img{
+
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 7px inset brown;
+    box-shadow: 0px 0px 15px 2px #917B8D;
+    border-style: inset;
+ }
+
+ .n_propuesta_titulo{
+
+    
+    font-size: 30px;
+    color: brown;
+    padding: 5px 50px 5px 50px;
+    text-align:center;
+ }
+
+ .n_propuesta_parrafo{
+   
+    font-size: 16px;
+    color:black;
+    padding: 10px 50px 30px 50px;
+    text-align:center;
+ }
+
+ .n_propuesta_link{
+
+    padding: 15px 50px 15px 50px;
+    background: brown;
+   
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration:none;
+
+ }
+
+ /*****************************ADMISION********************************/
+ .admision{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   
+
+    background-color: brown;
+    padding: 0px 0px 30px 0px;
+ }
+
+.video_anuncio{
+    padding-bottom: 30px;
+    
+}
+
+.cont_anuncio{
+    text-align: justify;
+    width: 300px;
+    
+}
+
+ .anuncio_titulo{
+    text-align: center;
+    color: #ffff;
+  
+    font-size:30px;
+    padding-bottom: 10px;
+ }
+
+ .anuncio_parrafo{
+    color:#ffff;
+    font-size: 18px;
+    
+ }
+
+ .lema_anuncio{
+
+    color: yellow;
+    font-family:"Archivo Black", serif;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+
+ }
+
+ .anuncio_link{
+
+    padding: 10px 30px 10px 30px;
+    background:yellow;
+   
+    font-weight: bold;
+    color:black;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    text-decoration:none;
+    width: 300px;
+
+ }
+ /*****************************NOTICIAS********************************/
+ .noticia_maynas{
+    padding-top: 50px;
+    text-align: center;
+    color: brown;
+    font-size:35px; 
+}
+
+ .cont_noticias{
+    padding-top: 50px;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+    padding:0px 30px 80px 30px;
+    text-align: justify;
+   
+}
+
+
+
+.noticia_titulo{
+    font-family:verdana;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.noticia_parrafo{
+   
+    font-size: 16px;
+    color: black;
+    width: 300px;
+    
+}
+
+.noticia_link{
+    margin-top: 20px;
+    padding: 15px 50px 15px 50px;
+   
+    background: brown;
+    
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration:none;
+
+ }
+ /*********************************************************************/
+
+ .footer{
+    /*clip-path: polygon(20% 0%,80% 0%,100% 0%,100% 80%,86% 70%,16% 70%,0% 80%,0% 0%);
+    clip-path: polygon(15% 20%,85% 20%,100% 0%,100% 100%,100% 100%,18% 100%,0% 100%,0% 0%);*/
+    clip-path: polygon(15% 10%,85% 10%,100% 0%,100% 100%,100% 100%,100% 100%,0% 100%,0% 0%);
+
+    background-image: url(../imagen/fondoLineasmovil.svg);
+
+    background-color: brown;
+    width: 100%;
+    height:450px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ /*********************************** WEB RESPONSY ***********************************/
+
+ @media(min-width:800px){
+
+    .nav_container{
+        height: 130px;
+        
+        
+    }
+    .maynas{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+
+    .colegio {
+        
+        font-size:40px;
+     
+      }
+
+        .logo{
+            order:0;
+        }
+    
+        .nav_link{
+            display:inline-block;
+            padding: 15px; 
+            order:2;
+        }
+        
+
+        .nav_hamburger{
+            order:1;
+        }
+
+        .nav_link_menu{
+            text-decoration: none;
+            color:#ffff;
+            font-size: 20px;
+            padding: 10px 15px 10px 15px;     
+        }
+        
+        .nav_icon{
+            display:none;  
+        }
+    
+    /****************** SOMOS ************************/
+    .somos{
+
+       
+
+        display: flex;
+        flex-direction:row;
+        gap:1em;
+
+        padding-top: 40px;
+        margin-bottom:-150px;
+
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        
+        width: 100%;
+    
+        line-height: 1.5em;
+        padding-bottom: 200px;
+    }
+
+    
+    .somos_insignea{
+        width:150px;
+    }
+
+    .somos_parrafo{
+        width:70%;
+        font-size: 20px;
+        color: #ffff;
+        text-align:center;
+        padding:35px 50px 40px 30px;
+       
+        margin-bottom: 0;
+        
+    }
+    /*********************************************************/
+
+    /**********************PROPUESTA***************************/
+
+    /*.propuesta{    
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .propuesta_titulo{
+        margin-top: 100px;
+        /*text-align: center;*/
+        font-size: 50px;
+        /*color: brown;*/
+    }
+
+    .propuesta_parrafo{
+        width: 50%;
+        font-size: 22px;
+        /*color: black;
+        text-align:center;
+        padding:0px 30px 40px 30px;*/
+    }
+
+    /*********************CONTENIDO PROPUESTA*************************/
+    .propuestas_lista{
+        padding-top: 50px;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*****************************ADMISION********************************/
+    .admision{
+        flex-direction:row;
+        gap: 150px;
+        padding:0px;
+        margin: 0;
+       margin-top: 50px;
+    }
+
+    .video_anuncio{
+        padding-bottom:0px;
+        width:400px;  
+    }
+
+    .cont_anuncio{
+        width: 500px; 
+    }
+
+    .anuncio_titulo{
+        font-size:50px; 
+    }
+
+    .anuncio_parrafo{
+        font-size: 25px;  
+    }
+
+    .lema_anuncio{   
+        font-size: 25px;  
+    }
+
+    .anuncio_link{
+        padding: 10px 30px 10px 30px;
+        font-size: 25px;
+        width: 500px;
+    }
+   
+ /*****************************NOTICIAS********************************/
+    .cont_noticias{
+        padding-top: 30px;
+    }
+    .cont_noticias{
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        justify-content:center;
+        align-items: center;
+        /*padding:0px 30px 80px 30px;
+        text-align: justify;*/
+    
+    }
+
+    .noticia_maynas{
+
+        padding: 100px 0px 50px 0px;
+        font-size: 50px;
+        
+    }
+
+    
+
+ }

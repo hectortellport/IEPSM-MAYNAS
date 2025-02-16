@@ -336,7 +336,7 @@ a{
     clip-path: polygon(15% 20%,85% 20%,100% 0%,100% 100%,100% 100%,18% 100%,0% 100%,0% 0%);*/
     clip-path: polygon(15% 10%,85% 10%,100% 0%,100% 100%,100% 100%,100% 100%,0% 100%,0% 0%);
 
-    background-image: url(../imagen/fondoLineasmovil.svg);
+    background-image:url(../imagen/fondoLineasmovil.svg);
 
     background-color: brown;
     width: 100%;

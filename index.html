@@ -13,28 +13,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/movil.css">
+  
+
+
     <title>IEPM MAYNAS</title>
 </head>
 <body>
     <header class="hero">
-      
         <nav class="nav">
             <div class="nav_container container">
                 <div class="logo">
                     <h2 class="colegio">Colegio</h2>
                     <h3 class="maynas">MAYNAS</h3>
                 </div>
-                <div class="nav_link">
-                    <a href="#" class="nav_link_menu">Inicio</a>
-                    <a href="#" class="nav_link_menu">Nosotros</a>
-                    <a href="#" class="nav_link_menu">Servicios</a>
-                    <a href="#" class="nav_link_menu">Galería</a>
-                    <a href="#" class="nav_link_menu">Contáctenos</a>
+
+                <div class="nav_link" id="open">
+                    <a href="index.html" class="nav_link_menu">Inicio</a>
+                    <a href="nosotros.html" class="nav_link_menu">Nosotros</a>
+                    <a href="servicios.html" class="nav_link_menu">Servicios</a>
+                    <a href="galeria.html" class="nav_link_menu">Galería</a>
+                    <a href="contactenos.html" class="nav_link_menu">Contáctenos</a>
                 </div>
-                <figure class="nav_hamburger">
+                <a href="#open" class="nav_hamburger">
                     <img src="imagen/icon-hamburger.svg" class="nav_icon">
-                </figure>
+                </a>
+
+                <a href="#" class="nav_hamburger nav_hamburger--last">
+                    <img src="imagen/icon-close.svg" class="nav_icon">
+                </a>
+
             </div>
         </nav>
 
@@ -81,10 +89,13 @@
                 <a href="#" class="n_propuesta_link">Leer más</a>
             </div>
         </section>
+
+
+
 <!----------------------- apartado ADMISION ------------------------>
 
         <section class="admision">
-            <video src="video/MATRICULA2025.mp4" width="375x" controls class="video_anuncio"></video>
+            <video src="video/MATRICULA2025.mp4" width="375x" autoplay loop controls class="video_anuncio"></video>
 
             <div class="cont_anuncio">
                 <h1 class="anuncio_titulo">Admisión 2025</h1>
@@ -106,42 +117,42 @@
             
             <div class="noticias">
                 
-                <img src="admin/noticias/FOTO1.jpg" width="300px"  alt="" class="noticia_img">
-                <div class="noticia_titulo">Mi titulo de mi noticias</div>
+                <img src="admin/noticias/FOTO01.jpg"   alt="" class="noticia_img">
+                <div class="noticia_titulo">Más de 300 colegios en Perú cierran por extorsión</div>
                 <p class="noticia_parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora assumenda optio ex laboriosam, corrupti sapiente odio quasi delectus hic ut quidem tempore perferendis saepe a fugit reprehenderit rerum nihil!
+                    En el distrito limeño de Comas, el Colegio Alfred Nobel ha decidido cerrar sus puertas tras recibir constantes amenazas de la banda criminal "Los Injertos del Cono Norte",  quienes exigían un pago 
                 </p>
-                <a href="#" class="noticia_link">Leer más</a>
+                <a href="https://actualidad.educacionenred.pe/2025/02/mas-300-colegios-peru-cierran-extorsion-bandas-criminales-316552.html"   target="_blank" class="noticia_link">Leer más</a>
             </div>
         
             <div class="noticias">
                 
-                <img src="admin/noticias/FOTO2.jpg" width="300px"  alt="" class="noticia_img">
-                <div class="noticia_titulo">Mi titulo de mi noticias</div>
+                <img src="admin/noticias/FOTO02.jpg" width="300px"  alt="" class="noticia_img">
+                <div class="noticia_titulo">Designan Director de Sistema Administrativo</div>
                 <p class="noticia_parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora assumenda optio ex laboriosam, corrupti sapiente odio quasi delectus hic ut quidem tempore perferendis saepe a fugit reprehenderit rerum nihil!
+                    Que, mediante Resolución Ministerial N° 408-2017-MINEDU, se aprueba el Cuadro para Asignación de Personal Provisional del PRONIED y a través de la Resolución Ministerial N° 619-2018-MINEDU y la Resolución 
                 </p>
-                <a href="#" class="noticia_link">Leer más</a>
+                <a href="https://actualidad.educacionenred.pe/2025/02/rd-000050-2025-minedu-vmgi-pronied-de-designan-director-sistema-administrativo-iii-316551.html" target="_blank" class="noticia_link">Leer más</a>
             </div>
           
             <div class="noticias">
                 
-                <img src="admin/noticias/FOTO5.jpg" width="300px"  alt="" class="noticia_img">
-                <div class="noticia_titulo">Mi titulo de mi noticias</div>
+                <img src="admin/noticias/FOTO03.jpg"  alt="" class="noticia_img">
+                <div class="noticia_titulo">Los principios del juego responsable</div>
                 <p class="noticia_parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora assumenda optio ex laboriosam, corrupti sapiente odio quasi delectus hic ut quidem tempore perferendis saepe a fugit reprehenderit rerum nihil!
+                    La industria de los juegos de azar en línea ha experimentado un crecimiento explosivo en los últimos años, transformando la forma en que las personas se involucran en los juegos de azar y las apuestas.
                 </p>
-                <a href="#" class="noticia_link">Leer más</a>
+                <a href="https://actualidad.educacionenred.pe/2025/02/lo-que-hay-que-saber-para-proteger-su-dinero-apostar-linea-segun-principios-juego-316596.html" target="_blank" class="noticia_link">Leer más</a>
             </div>
             
             <div class="noticias">
                 
-                <img src="admin/noticias/FOTO1.jpg" width="300px"  alt="" class="noticia_img">
-                <div class="noticia_titulo">Mi titulo de mi noticias</div>
+                <img src="admin/noticias/FOTO04.jpg" width="300px"  alt="" class="noticia_img">
+                <div class="noticia_titulo">Proyecto ecológico del COAR Moquegua</div>
                 <p class="noticia_parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora assumenda optio ex laboriosam, corrupti sapiente odio quasi delectus hic ut quidem tempore perferendis saepe a fugit reprehenderit rerum nihil!
+                    Dos exalumnas del Colegio de Alto Rendimiento (COAR) Moquegua, Faviana Coahuila y Flor Gómez, han desarrollado un fertilizante orgánico utilizando sangre desechada en camales. 
                 </p>
-                <a href="#" class="noticia_link">Leer más</a>
+                <a href="https://actualidad.educacionenred.pe/2025/02/proyecto-ecologico-coar-moquegua-transforma-residuos-camal-fertilizante-para-316684.html" target="_blank" class="noticia_link">Leer más</a>
             </div>
             
             
@@ -156,7 +167,6 @@
 
     <footer class="footer">
         <div class="footer_logo">
-            
             <div class="footer_logo_titulo">
                 <h2 class="f_colegio">Colegio</h2>
                 <h3 class="f_maynas">MAYNAS</h3>
@@ -167,11 +177,12 @@
         <div class="redes_sociales">
             <h3 class="footer_titulo_rd">Síguenos en</h3>
             <div class="footer_iconos_rd">
-                <img src="imagen/facebook.png" width="50px" alt="" class="footer_rd">
-                <img src="imagen/twitter.png"  width="50px" alt="" class="footer_rd">
-                <img src="imagen/youtube.png"  width="50px" alt="" class="footer_rd">
-                <img src="imagen/tik-tok.png"  width="50px" alt="" class="footer_rd">
-                <img src="imagen/x.png"        width="50px" alt="" class="footer_rd">
+                <a href="https://www.facebook.com/institucioneducativamaynas"><img src="imagen/facebook.png" width="50px" alt="" class="footer_rd"></a>
+                <a href="https://www.instagram.com/"><img src="imagen/twitter.png" width="50px" alt="" class="footer_rd"></a>
+                <a href="https://www.youtube.com/watch?v=B8OWDCN5RB8&t=212s"><img src="imagen/youtube.png" width="50px" alt="" class="footer_rd"></a>
+                <a href="https://www.tiktok.com/@hectortellport1?lang=es"><img src="imagen/tik-tok.png" width="50px" alt="" class="footer_rd"></a>
+                <a href="https://x.com/HectorTellport"><img src="imagen/x.png" width="50px" alt="" class="footer_rd"></a>
+                
             </div>  
         </div>
 
@@ -185,10 +196,12 @@
         <div class="footer_enlaces">
             <h3 class="footer_titulo_enlaces">Enlaces</h3>
             <div class="footer_img_enlaces">
-                <img src="imagen/minedu.jpg" alt="" class="footer_link_enlaces">
-                <img src="imagen/ugel_maynas.jpg" alt="" class="footer_link_enlaces">
-                <img src="imagen/peru_educa.jpg" alt="" class="footer_link_enlaces">
-                <img src="imagen/elperuano.jpg" alt="" class="footer_link_enlaces">
+                <a href="https://www.gob.pe/minedu"><img src="imagen/minedu.jpg" alt="" class="footer_link_enlaces" ></a>
+                <a href="https://www.facebook.com/p/UGEL-Maynas-100057189590003/?locale=es_LA"><img src="imagen/ugel_maynas.jpg" alt="" class="footer_link_enlaces" ></a>
+                <a href="https://www.perueduca.pe"><img src="imagen/peru_educa.jpg" alt="" class="footer_link_enlaces" ></a>
+                <a href="https://elperuano.pe/"><img src="imagen/elperuano.jpg" alt="" class="footer_link_enlaces" ></a>
+
+                
             </div>
             
         </div>

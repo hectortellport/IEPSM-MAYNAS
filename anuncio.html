@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #anuncio {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: none;
+        }
+        #cerrar {
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="anuncio">
+        <span id="cerrar" onclick="cerrarAnuncio()">×</span>
+        <p>¡Nueva funcionalidad disponible! Prueba ahora nuestro chat en vivo.</p>
+    </div>
+
+    <script>
+        function mostrarAnuncio() {
+            document.getElementById('anuncio').style.display = 'block';
+        }
+        
+        function cerrarAnuncio() {
+            document.getElementById('anuncio').style.display = 'none';
+        }
+
+        // Mostrar después de 5 segundos
+        setTimeout(mostrarAnuncio, 1000);
+    </script>
+</body>
+</html>

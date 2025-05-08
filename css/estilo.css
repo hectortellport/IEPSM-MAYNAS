@@ -1,0 +1,1243 @@
+:root{
+    --padding-container:80px 0;
+    scroll-padding-top: 80px;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    line-height: 1.5em;
+    /*font-weight:;
+    font-style: normal;*/
+}
+
+h1 ,h2 ,h3{
+    font-family: "Archivo Black", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;;
+}
+
+ .hero{
+    
+    --padding-container:0;
+ }
+
+ .nav{
+    background-color: brown;
+    background-image: url(../imagen/fondoLineasmovil.svg);
+ }
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    overflow: hidden;
+
+    margin:0 auto;
+    padding:--var(--padding-container);
+}
+
+.nav_container{
+    height: 80px;
+    display: flex;
+    
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.nav_link:target{
+    clip-path: circle(150% at top left);
+}
+
+.nav_link:target ~ .nav_hamburger--last{
+    display: block;
+}
+
+
+.nav_link{
+    /*display: none;*/
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    background-color: brown;
+    gap: 2em;
+    color: #ffff;
+
+    clip-path: circle(0% at top left);
+
+    transition: .4s clip-path;
+}
+
+.nav_link_menu{
+    border-radius: 25px;
+    color:white;
+    background-color: initial;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px;
+}
+
+.nav_link_menu:hover{
+    border-radius: 0px;
+    font-size: 20px;
+    color:yellow;
+    font-weight: bold;
+    background-color:initial;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+   padding: 10px 10px 10px 10px;
+   border-radius: 0px;
+    
+}
+
+.nav_hamburger--last{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 24px;
+}
+
+.nav_icon{
+    display:block;
+}
+
+.maynas{
+        font-family: "Rubik Mono One", serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#ffff;
+        font-size: 30px;
+
+        padding-top: 10px;
+        filter:drop-shadow(2px 2px 2px black)
+}
+    
+.logo{
+
+    display: flex;
+    flex-direction:column;
+    line-height:1.7em;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.colegio {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:35px;
+    color:yellow;
+  }
+  
+
+.banner_img{
+    /*background-color: brown;*/
+    height: 600px;
+    background-image: url(../imagen/IEMAYNAS.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.somos{
+
+    clip-path: polygon(20% 0%,80% 0%,100% 0%,100% 80%,90% 70%,10% 70%,0% 80%,0% 0%);
+    background-image: url(../imagen/fondoLineasmovil.svg);
+    padding-top: 40px;
+    margin-bottom:-150px;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    
+    width: 100%;
+
+    line-height: 1.5em;
+    padding-bottom: 200px;
+}
+
+
+
+.somos_insignea{
+    width:100px;
+}
+
+.somos_parrafo{
+    font-size: 18px;
+    color: #ffff;
+    text-align:center;
+    padding:0px 30px 40px 30px;
+    font-family: verdana;
+    margin-bottom: 0;
+    
+}
+
+/**********************PROPUESTA***************************/
+
+.propuesta{
+    
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.propuesta_titulo{
+    text-align: center;
+    font-size: 35px;
+    color: brown;
+}
+
+.propuesta_parrafo{
+    font-size: 18px;
+    color: black;
+    text-align:center;
+    padding:0px 30px 40px 30px;
+    font-family: verdana;
+
+}
+ /*********************CONTENIDO PROPUESTA*************************/
+
+ .n_propuesta{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+ }
+ .n_propuesta_img{
+
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 7px inset brown;
+    box-shadow: 0px 0px 15px 2px #917B8D;
+    border-style: inset;
+ }
+
+ .n_propuesta_titulo{
+
+    
+    font-size: 30px;
+    color: brown;
+    padding: 5px 50px 5px 50px;
+    text-align:center;
+ }
+
+ .n_propuesta_parrafo{
+   
+    font-size: 16px;
+    color:black;
+    padding: 10px 50px 30px 50px;
+    text-align:center;
+ }
+
+ .n_propuesta_link{
+
+    padding: 15px 50px 15px 50px;
+    background: brown;
+   
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration:none;
+    filter:drop-shadow(2px 2px 2px black)
+
+ }
+
+ /*****************************ADMISION********************************/
+ .admision{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   
+
+    background-color: brown;
+    padding: 0px 0px 30px 0px;
+ }
+
+.video_anuncio{
+    padding-bottom: 30px;
+    
+}
+
+.cont_anuncio{
+    text-align: center;
+    width: 300px;
+    
+}
+
+ .anuncio_titulo{
+    text-align: center;
+    color: #ffff;
+  
+    font-size:30px;
+    padding-bottom: 10px;
+ }
+
+ .anuncio_parrafo{
+    color:#ffff;
+    font-size: 18px;
+    
+ }
+
+ .lema_anuncio{
+
+    color: yellow;
+    font-family:"Archivo Black", serif;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+
+ }
+
+ .anuncio_link{
+
+    padding: 10px 30px 10px 30px;
+    background:yellow;
+   
+    font-weight: bold;
+    color:black;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    text-decoration:none;
+    width: 300px;
+    filter:drop-shadow(2px 2px 2px black)
+
+ }
+ /*****************************NOTICIAS********************************/
+ .noticia_maynas{
+    padding-top: 50px;
+    text-align: center;
+    color: brown;
+    font-size:35px; 
+}
+
+ .cont_noticias{
+    padding-top: 50px;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+    padding:0px 30px 80px 30px;
+    text-align: justify;
+}
+
+.noticia_img{
+    width:300px;
+    height:230px;
+}
+.noticia_titulo{
+    font-family:verdana;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+}
+
+.noticia_parrafo{
+   
+    font-size: 16px;
+    color: black;
+    width: 300px; 
+}
+
+.noticia_link{
+    margin-top: 20px;
+    padding: 15px 50px 15px 50px;
+   
+    background: brown;
+    
+    font-weight: bold;
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration:none;
+    filter:drop-shadow(2px 2px 2px black)
+ }
+ /*********************************************************************/
+
+ .footer{
+    /*clip-path: polygon(20% 0%,80% 0%,100% 0%,100% 80%,86% 70%,16% 70%,0% 80%,0% 0%);
+    clip-path: polygon(15% 20%,85% 20%,100% 0%,100% 100%,100% 100%,18% 100%,0% 100%,0% 0%);*/
+    clip-path: polygon(15% 10%,85% 10%,100% 0%,100% 100%,100% 100%,100% 100%,0% 100%,0% 0%);
+
+    background-image: url(../imagen/fondoLineasmovil.svg);
+
+    background-color: brown;
+    width: 100%;
+    height:1400px;
+
+
+    display: flex;
+    flex-direction:column;
+    gap:15px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+.footer_insignea{
+    width: 150px;
+}
+
+.footer_logo{
+
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+ .footer_logo_titulo{
+
+    display: flex;
+    flex-direction:column;
+    
+    line-height:1.3em;
+    
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+ .f_maynas{
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffff;
+    font-size: 25px;
+
+    padding-top: 10px;
+    filter:drop-shadow(2px 2px 2px black)
+}
+
+
+
+.f_colegio {
+font-family: "Dancing Script", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-size:30px;
+color:yellow;
+}
+
+.redes_sociales{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer_iconos_rd{
+    display: flex;
+    flex-direction:row;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_rd{
+    width: 50px;
+
+}
+
+.footer_titulo_rd{
+  
+    color: #ffff;
+}
+
+.footer_contactenos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.footer_titulo_contactenos{
+    color: #ffff;
+}
+
+.footercontac{
+    color: #ffff;
+}
+
+
+.footer_enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer_titulo_enlaces{
+    color: #ffff;
+}
+.footer_link_enlaces{
+
+    width: 250px;
+    height: 70px;
+    display: block;
+    margin: 20px;
+}
+
+
+.Copyright{
+    display: block;
+    width: 100%;
+    color: #ffff;
+    font-size: 14px;
+    text-align: center;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/*********************************** WEB RESPONSY ***********************************/
+
+@media(min-width:1000px){
+
+    .nav{
+        position:fixed;
+        width: 100%;
+        z-index:1;
+    }
+
+  
+
+
+
+    .banner_img{
+        /*background-color: brown;*/
+        height: 750px;
+        background-image: url(../imagen/IEMAYNAS.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+
+    .nav_container{
+        height: 130px;
+    }
+    .maynas{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+
+    .colegio {
+        
+        font-size:40px;
+     
+      }
+
+        .logo{
+            order:0;
+        }
+    
+        .nav_link{
+            display:inline-block;
+          
+            position: static;
+            background-color: initial;
+            
+            order:2;
+            clip-path: circle(150% at top left);
+            
+        }
+
+        .nav_link_menu{
+            font-weight: bold;
+            text-decoration: none;
+            color:#ffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+         
+            
+        }
+
+        .nav_link_menu:hover{
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 15px;
+            color:yellow;
+            background-color: black;
+           padding: 10px 20px 10px 20px;
+            
+          
+        }
+
+        
+
+        .nav_hamburger{
+            order:1;
+        }
+
+        
+        
+        .nav_icon{
+            display:none;  
+        }
+    
+    /****************** SOMOS ************************/
+    .somos{
+
+       
+
+        display: flex;
+        flex-direction:row;
+        gap:1em;
+
+        padding-top: 40px;
+        margin-bottom:-150px;
+
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+        
+        width: 100%;
+    
+        line-height: 1.5em;
+        padding-bottom: 200px;
+    }
+
+    
+    .somos_insignea{
+        width:150px;
+    }
+
+    .somos_parrafo{
+        width:70%;
+        font-size: 20px;
+        color: #ffff;
+        text-align:center;
+        padding:35px 50px 40px 30px;
+       
+        margin-bottom: 0;
+        
+    }
+    /*********************************************************/
+
+    /**********************PROPUESTA***************************/
+
+    /*.propuesta{    
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .propuesta_titulo{
+        margin-top: 100px;
+        /*text-align: center;*/
+        font-size: 50px;
+        /*color: brown;*/
+    }
+
+    .propuesta_parrafo{
+        width: 50%;
+        font-size: 22px;
+        /*color: black;
+        text-align:center;
+        padding:0px 30px 40px 30px;*/
+    }
+
+    /*********************CONTENIDO PROPUESTA*************************/
+    .propuestas_lista{
+        padding-top: 50px;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*****************************ADMISION********************************/
+    .admision{
+        flex-direction:row;
+        gap: 150px;
+        padding:0px;
+        margin: 0;
+       margin-top: 50px;
+    }
+
+    .video_anuncio{
+        padding-bottom:0px;
+        width:400px;  
+    }
+
+    .cont_anuncio{
+        width: 500px; 
+    }
+
+    .anuncio_titulo{
+        font-size:50px; 
+    }
+
+    .anuncio_parrafo{
+        font-size: 25px;  
+    }
+
+    .lema_anuncio{   
+        font-size: 25px;  
+    }
+
+    .anuncio_link{
+        padding: 10px 30px 10px 30px;
+        font-size: 25px;
+        width: 500px;
+    }
+   
+ /*****************************NOTICIAS********************************/
+    .cont_noticias{
+        padding-top: 30px;
+    }
+    .cont_noticias{
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        justify-content:center;
+        align-items: center;
+        /*padding:0px 30px 80px 30px;
+        text-align: justify;*/
+    
+    }
+
+    .noticia_maynas{
+
+        padding: 100px 0px 50px 0px;
+        font-size: 50px;
+        
+    }
+
+/*****************************FOOTER********************************/
+
+.footer{
+    width:100%;
+    height: 450px;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+.footer_logo{
+    flex-direction:column;
+}
+
+.footer_img_enlaces{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+   
+}
+
+ }
+
+/****************************************************************************/
+
+
+
+
+/*****************************PAGINA NOSOTROS********************************/
+
+
+
+.presenttitulo{
+    font-size: 35px;
+    color: brown;
+    text-align: center;
+    padding: 15px 0px 50px 0px;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.presentdirectoraimg{
+    width: 400px;
+    height: 300px;
+}
+
+.presentparrafo{
+    
+    font-size: 18px;
+    color: #ffff;
+    padding: 30px 20px 20px 30px;
+    background-color: brown;
+    text-align:justify;
+
+}
+
+/****************************************** MISION ********************************************/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.visiontitulo{
+    font-size: 35px;
+    color: brown;
+    text-align: center;
+    padding: 50px 0px 5px 0px;
+}
+
+.visionparrafo{
+    
+    font-size: 18px;
+    color: black;
+    padding: 30px 20px 20px 30px;
+    
+    text-align:justify;
+
+}
+
+.misiontitulo{
+    font-size: 35px;
+    color: brown;
+    text-align: center;
+    padding: 50px 0px 5px 0px;
+}
+
+.misionparrafo{
+    
+    font-size: 18px;
+    color: black;
+    padding: 30px 20px 20px 30px;
+    
+    text-align:justify;
+
+}
+
+/****************************************** PAGINA CONTACTENOS ********************************************/
+.contactenostitulo{
+    text-align: center;
+    font-size: 35px;
+    padding: 30px 0px 50px 0px;
+    color: brown;
+}
+.contactenos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 15px;
+}
+
+.contactenosimg{
+    width: 300px;
+    height: 350px;
+
+    margin-bottom:-150px;
+}
+
+
+.etiqueta{
+    font-size: 14px;
+    color:brown;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    /*font-optical-sizing: auto;
+    line-height: 1.5em;*/
+}
+.registros{
+    font-size: 14px;
+    color:black;
+    font-family: "Montserrat", serif;
+ 
+    /*font-optical-sizing: auto;
+    line-height: 1.5em;*/
+}
+
+#btnEnviar{
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    color:brown;
+
+}
+
+/********************************** PAGINA GALERIA *********************************************/
+.galeriatitulo{
+
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 50px;
+    color: brown;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 370px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+        
+  
+}
+
+.ngaleria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    margin: auto;
+}
+
+.galeria img{
+    
+    width: 390px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(40%);
+    transition: .7s ease;
+    
+}
+
+
+
+.galeria img:hover{
+    width: 450px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+.galeria h3{
+        text-align: center;
+        color: brown;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .galeria p{
+
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        
+    }
+
+/***************************** PAGINA NOSOTROS - RESPONSY *********************************/
+
+@media(min-width:1000px){
+
+    .presenttitulo{
+        font-size: 50px;
+        padding: 70px 0px 50px 0px;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction:row;
+    }
+
+    .presentdirectoraimg{
+        width:800px;
+        height:600px;
+    }
+
+    .presentparrafo{
+        width: 400px;
+        font-size: 18px;
+        color: #ffff;
+        padding: 35px 20px 30px 20px;
+        background-color: brown;
+        text-align:justify;
+
+    }
+
+    /**************************/
+
+    .nosotros{
+        
+        flex-direction: row;
+        padding: 30px 100px 80px 30px;
+        gap:15px;
+    }
+
+    /****************************CONTACTENOS RESPONSY************************************/
+    .contactenostitulo{   
+        font-size: 50px;
+        padding: 100px 0px 50px 0px;
+    }
+
+    .contactenos{
+        flex-direction: row;
+        gap: 100px;
+    }
+    
+    .formcontac{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        gap: 15px;
+    }
+    
+    .contactenosimg{
+        width: 600px;
+        height: 650px;
+    }
+    
+    .etiqueta{
+        font-size: 20px;
+    }
+    .registros{
+        font-size: 16px;
+    }
+    
+    #btnEnviar{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        width: 100%;
+        height: 50px;
+        color:brown;
+    
+    }
+
+
+    /********************************GALERIA RESPONSY**************************************/
+    .galeriatitulo{
+        font-size: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .galeria{
+        
+        flex-direction:row;
+        flex-wrap:wrap;
+        width: 100%;
+        max-width: 600px;
+        gap: 20px;
+       /* background-color: blue;*/
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .ngaleria{
+        width: 800px;
+    }
+    
+    
+    .galeria img{
+        
+        width: 600px;
+        height: 500px;
+        flex-grow: 1;
+        flex-basis: 600px;
+        object-fit: cover;
+        filter: brightness(40%);
+        transition: .7s ease;
+        
+    }
+    
+    
+    
+    .galeria img:hover{
+        width: 800px;
+        opacity: 1;
+        filter: brightness(130%);
+    }
+    
+    .galeria h3{
+            font-size: 35px;
+            text-align: center;
+            color: brown;
+            padding-bottom: 20px;
+            padding-top: 20px;
+
+        }
+    
+        .galeria p{
+            font-size: 22px;
+            text-align: center;
+    
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************ANIMACION*******************************/
+
+
+
+
+.n_propuesta_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: BLUE;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+
+.anuncio_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: blue;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+
+.noticia_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: blue;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+/*********************************************************************************/
+
+
+/**************************ANIMACION TRANSPARENCIA********************************/
+.propuesta{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+    animation-range:entry 25% cover 50%;
+}
+
+.propuestas_lista{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+    animation-range:entry 25% cover 50%;
+}
+
+.admision{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+.noticia_maynas{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+.cont_noticias{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+@keyframes show{
+    from
+    {
+        opacity: 0;
+        transform:sacale(0.25);
+    }
+    to
+    {
+        opacity: 1;
+        transform:sacale(1);
+    }
+}
+/**********************************************************************************/
+
+
+
+
+

@@ -1,0 +1,96 @@
+
+/**************************HOVER****************************/
+
+
+.nav_link_menu:hover{
+    border-radius: 25px;
+    color:yellow;
+    background-color: black;
+    height: 100%;
+}
+
+.n_propuesta_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: BLUE;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+
+.anuncio_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: blue;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+
+.noticia_link:hover{
+    transform: scale(1.1,1.1);
+    background-color: blue;
+    color: #ffff;
+    filter:drop-shadow(4px 4px 4px black)
+}
+/*********************************************************************************/
+
+
+/**************************ANIMACION TRANSPARENCIA********************************/
+.propuesta{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+    animation-range:entry 25% cover 50%;
+}
+
+.propuestas_lista{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+    animation-range:entry 25% cover 50%;
+}
+
+.admision{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+.noticia_maynas{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+.cont_noticias{
+    view-timeline-name: --scroll;
+    animation-name: show;
+    animation-fill-mode:both;
+    animation-timeline: --scroll;
+
+    animation-range:entry 25% cover 50%;
+}
+
+@keyframes show{
+    from
+    {
+        opacity: 0;
+        transform:sacale(0.25);
+    }
+    to
+    {
+        opacity: 1;
+        transform:sacale(1);
+    }
+}
+/**********************************************************************************/
+
+
+
+
+

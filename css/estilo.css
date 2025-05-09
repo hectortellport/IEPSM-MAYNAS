@@ -38,6 +38,7 @@ a{
  }
 
 .container{
+
     max-width: 1200px;
     width: 90%;
     overflow: hidden;
@@ -533,13 +534,46 @@ color:yellow;
     padding: 10px 10px 10px 10px;
 }
 
+/********************************** MODAL ********************************************/
+
+.modal{
+
+    padding-top: 0px;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+}
+
+.modal_container{
+
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    max-height: 95%;
+    background-color: #ffff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+
+    display: grid;
+    gap: 0.3em;
+    place-items: center;
+    grid-auto-columns: 100%;
+
+}
+
+
 
 /*********************************** WEB RESPONSY ***********************************/
 
 @media(min-width:1000px){
 
     .nav{
-        position:fixed;
+        /*position:fixed;*/
         width: 100%;
         z-index:1;
     }

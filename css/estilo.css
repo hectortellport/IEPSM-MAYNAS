@@ -566,6 +566,35 @@ color:yellow;
 
 }
 
+.modal_titulo{
+    font-size: 2.5rem;
+}
+
+.modal_parrafo{
+    margin-bottom: 10px;
+}
+
+.modal_cerrar{
+    text-decoration: none;
+    color: #ffff;
+    background-color:#f26250;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 300;
+    transition:background-color .3s;
+}
+
+.modal_hide{
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal_cerrar:hover{
+    color: #f26250;
+    background-color:#ffff;
+}
 
 
 /*********************************** WEB RESPONSY ***********************************/
